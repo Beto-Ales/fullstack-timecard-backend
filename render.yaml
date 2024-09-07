@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: fullstack-timecard-backend
+    env: static
+    plan: free
+    staticPublishPath: /build
+    redirects:
+      - source: "/*"
+        destination: "/"
+        status: 200
